@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>The Great Number Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class = "wrapper">
+        <h1>Welcome to the great number game!</h1>
+        <p>I am thinking of a number between 1 and 100</p>
+        <p>Take a guess!</p>
+        <div class = <%=for_engine.box_class%> >
+            <p class = "<%=for_engine.guess_text%>"><span style = 'color:rgba(255, 255, 255, 0.822); font-weight: bold; display: <%=for_engine.text_display%>'><%=for_engine.text_content%></span></p>
+            <form action = '/reset'>
+                <input class="btn btn-primary sub_btn" type="submit" value="Play Again?" style = 'display: <%=for_engine.play_again_display%>'>
+            </form>
+        </div>
+        <form action = '/guess' method = 'post'>
+            <input type="text" name = 'user_num' class="form-control guess" id="user_guess" placeholder="1-100" style = 'display: <%=for_engine.input_display%>'>
+            <input class="btn btn-primary sub_btn" type="submit" value="Submit" style = 'display: <%=for_engine.submit_display%>'>
+        </form>
+        <p style = 'display: <%= for_engine.guess_display %>'><%= for_engine.guess_text %></p>
+    </div>
+</body>
+</html>
+

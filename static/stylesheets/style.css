@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin: 0px auto;
+    padding: 100px;
+    text-align: center;
+    width: 800px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.wrong_guess {
+    height: 200px;
+    text-align: center;
+    width: 200px;
+    background-color: rgb(211, 26, 26);
+    padding: 20px 0px;
+    margin: 0px auto;
+}
+
+.guess_text {
+    margin-top: 62px;
+}
+
+.no_guess {
+
+}
+
+.correct_guess {
+    height: 200px;
+    text-align: center;
+    width: 200px;
+    background-color: rgb(26, 211, 41);
+    padding: 20px 10px;
+    margin: 0px auto;
+}
+
+.guess {
+    width: 150px;
+    margin: 10px auto;
+}
+
+.sub_btn {
+    margin: 10px;
+    width: 150px;
+}
